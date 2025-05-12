@@ -6,7 +6,7 @@
 # docker run -d -e LIBP2P_PORT=16000 libp2p-node
 
 # Use a slim Node.js base image
-FROM node:23-alpine
+FROM node:24-alpine
 
 # Set the working directory
 WORKDIR /app
