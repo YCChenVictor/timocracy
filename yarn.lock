@@ -1996,6 +1996,19 @@
     uint8arraylist "^2.4.8"
     uint8arrays "^5.1.0"
 
+"@libp2p/crypto@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@libp2p/crypto/-/crypto-5.1.2.tgz#8b6a326450fc8c8905cbc6a9b45357049386d6e8"
+  integrity sha512-X/hey2FtoP4uQdFHf2Fh9W2ABTiJEAl5I2ihRyUwDBLidTa5I6lkbbgeV3deXX4ouKEa1akn+2hYSaFh42BwVQ==
+  dependencies:
+    "@libp2p/interface" "^2.10.0"
+    "@noble/curves" "^1.7.0"
+    "@noble/hashes" "^1.6.1"
+    multiformats "^13.3.1"
+    protons-runtime "^5.5.0"
+    uint8arraylist "^2.4.8"
+    uint8arrays "^5.1.0"
+
 "@libp2p/identify@^3.0.29":
   version "3.0.29"
   resolved "https://registry.yarnpkg.com/@libp2p/identify/-/identify-3.0.29.tgz#d558379d4fddd78b7811e2d43268d983745ac9c7"
@@ -2026,10 +2039,10 @@
     "@multiformats/multiaddr" "^12.3.3"
     progress-events "^1.0.1"
 
-"@libp2p/interface@^2.0.0", "@libp2p/interface@^2.9.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@libp2p/interface/-/interface-2.9.0.tgz#c1276c6788436451aec7236482bc227817476048"
-  integrity sha512-L/0Z5H0mjaECA0jkZG+OJmEhB/OIJ07gzZYljU7C19XjL3dSkBvhA9il+G3FpHyHgqAOVGuQU5qkbv2Edj8FIA==
+"@libp2p/interface@^2.0.0", "@libp2p/interface@^2.10.0", "@libp2p/interface@^2.9.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@libp2p/interface/-/interface-2.10.0.tgz#67f4567203910ba14150b10c5c873a448129ff03"
+  integrity sha512-DCNyJt84E+YncvusmiAvChaGjncGhzDChFFzUs4dJ5RqLr93jv41HotxGQFl3j/uZ8y9gxWsxkufF21yxxfFhA==
   dependencies:
     "@multiformats/multiaddr" "^12.3.3"
     it-pushable "^3.2.3"
@@ -2049,6 +2062,17 @@
   integrity sha512-0+rOHEXXDNZvsb9p04jVAFQB0WcvMxFfqzSe271/tg4yVlPF5H99l5BwOqeb+EYhHV1lTk+zrJdPK9easHr1fQ==
   dependencies:
     "@libp2p/interface" "^2.9.0"
+    "@multiformats/multiaddr" "^12.3.3"
+    interface-datastore "^8.3.1"
+    multiformats "^13.3.1"
+    weald "^1.0.4"
+
+"@libp2p/logger@^5.1.16":
+  version "5.1.16"
+  resolved "https://registry.yarnpkg.com/@libp2p/logger/-/logger-5.1.16.tgz#7c470393f4dac3ecbc5db0500959904e5a1ab0cb"
+  integrity sha512-2EzXpar2i5ivsrfkhQXrSe4sT6WUK+p0MZnFk68m9BbW/LRCtbaPhp4/Rf/O+9QoaZBUXEWAq4fpgYfY7P93dQ==
+  dependencies:
+    "@libp2p/interface" "^2.10.0"
     "@multiformats/multiaddr" "^12.3.3"
     interface-datastore "^8.3.1"
     multiformats "^13.3.1"
@@ -2184,13 +2208,13 @@
     uint8arraylist "^2.4.8"
     uint8arrays "^5.1.0"
 
-"@libp2p/tcp@^10.1.10":
-  version "10.1.10"
-  resolved "https://registry.yarnpkg.com/@libp2p/tcp/-/tcp-10.1.10.tgz#4bd4e6f5c1a3bb62719e3e8cf8aac0b9e947b05d"
-  integrity sha512-OpzojfJQgg8Cy9g/c/OqI2y5M58stvpbEqh+zWdgLn6J7iJaIigL5M3Hls6Fn7KZtxshfqaKDIrD/x/Le8+A8w==
+"@libp2p/tcp@^10.1.11":
+  version "10.1.11"
+  resolved "https://registry.yarnpkg.com/@libp2p/tcp/-/tcp-10.1.11.tgz#7c71361bd7c3a78c7f0245c369df1c7c98b162c3"
+  integrity sha512-N707OZ21L3AYrWMJB0qLVSZcdrgYHSY788Es/5rGGcSdiHkVSM3uKSQj5/YjVdRUZbc6c1D/2Ja+6WmVxGhzRw==
   dependencies:
-    "@libp2p/interface" "^2.9.0"
-    "@libp2p/utils" "^6.6.2"
+    "@libp2p/interface" "^2.10.0"
+    "@libp2p/utils" "^6.6.3"
     "@multiformats/multiaddr" "^12.3.3"
     "@multiformats/multiaddr-matcher" "^1.6.0"
     "@types/sinon" "^17.0.3"
@@ -2200,16 +2224,16 @@
     race-event "^1.3.0"
     stream-to-it "^1.0.1"
 
-"@libp2p/utils@^6.6.2":
-  version "6.6.2"
-  resolved "https://registry.yarnpkg.com/@libp2p/utils/-/utils-6.6.2.tgz#cd52a408bfde6cb48c7c6cdb9f6ebdae7ffc7a37"
-  integrity sha512-PjbKA0+l+8mmM7quOnG0D7XKdlF/3Hi5Aco3D0ZQXW68QnzmjEEeTbky1gzrZUgnMBmb2ZYrBlZd0GpsJ7Rc9Q==
+"@libp2p/utils@^6.6.2", "@libp2p/utils@^6.6.3":
+  version "6.6.3"
+  resolved "https://registry.yarnpkg.com/@libp2p/utils/-/utils-6.6.3.tgz#632dab6bab04e464640a15e6132083753254bdd2"
+  integrity sha512-tSW4VgOjEPDonaeaMaaBBYlETTW/SbLJBDTWw3rAB8OXzHbxo8iKm+QTkSTcHHpI9xCSHKbyuSurFc19XYL/Tw==
   dependencies:
     "@chainsafe/is-ip" "^2.0.2"
     "@chainsafe/netmask" "^2.0.0"
-    "@libp2p/crypto" "^5.1.1"
-    "@libp2p/interface" "^2.9.0"
-    "@libp2p/logger" "^5.1.15"
+    "@libp2p/crypto" "^5.1.2"
+    "@libp2p/interface" "^2.10.0"
+    "@libp2p/logger" "^5.1.16"
     "@multiformats/multiaddr" "^12.3.3"
     "@sindresorhus/fnv1a" "^3.1.0"
     any-signal "^4.1.1"
